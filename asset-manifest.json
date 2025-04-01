@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Reshmi-s-Portfolio/static/css/main.7cb9fa72.css",
+    "main.js": "/Reshmi-s-Portfolio/static/js/main.7046668a.js",
+    "static/css/769.b3cbb36b.chunk.css": "/Reshmi-s-Portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.bda0d7b7.chunk.js": "/Reshmi-s-Portfolio/static/js/769.bda0d7b7.chunk.js",
+    "static/media/myimg.JPG": "/Reshmi-s-Portfolio/static/media/myimg.cdcaca8b890c7c7a8fd0.JPG",
+    "static/media/Montserrat-Regular.ttf": "/Reshmi-s-Portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/nmims1.jpg": "/Reshmi-s-Portfolio/static/media/nmims1.11799bf658efa0af6baa.jpg",
+    "static/media/amzctf.webp": "/Reshmi-s-Portfolio/static/media/amzctf.79afb440f905afb61a99.webp",
+    "static/media/Agustina.woff": "/Reshmi-s-Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/developerActivity.svg": "/Reshmi-s-Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/secplus.webp": "/Reshmi-s-Portfolio/static/media/secplus.15ef1a5affbbd3dcf8a0.webp",
+    "static/media/awss.jpg": "/Reshmi-s-Portfolio/static/media/awss.223364b9b3c059f7cf82.jpg",
+    "static/media/Alcon.png": "/Reshmi-s-Portfolio/static/media/Alcon.920fd0a9a7abd2647694.png",
+    "static/media/git.jpeg": "/Reshmi-s-Portfolio/static/media/git.18d3d405d2ec9c556cb6.jpeg",
+    "static/media/skill.svg": "/Reshmi-s-Portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/saayaHealthLogo.webp": "/Reshmi-s-Portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
+    "static/media/nextuLogo.webp": "/Reshmi-s-Portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
+    "index.html": "/Reshmi-s-Portfolio/index.html",
+    "static/media/talksCardBack.svg": "/Reshmi-s-Portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.7cb9fa72.css.map": "/Reshmi-s-Portfolio/static/css/main.7cb9fa72.css.map",
+    "main.7046668a.js.map": "/Reshmi-s-Portfolio/static/js/main.7046668a.js.map",
+    "769.b3cbb36b.chunk.css.map": "/Reshmi-s-Portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.bda0d7b7.chunk.js.map": "/Reshmi-s-Portfolio/static/js/769.bda0d7b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cb9fa72.css",
+    "static/js/main.7046668a.js"
+  ]
+}
