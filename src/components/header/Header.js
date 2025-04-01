@@ -8,6 +8,7 @@ import {
   workExperiences,
   skillsSection,
   openSource,
+  projectsData,
   blogSection,
   talkSection,
   achievementSection,
@@ -17,7 +18,8 @@ import {
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
-  const viewOpenSource = openSource.display;
+  //const viewOpenSource = openSource.display;
+  const viewprojectsData = projectsData.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -46,14 +48,20 @@ function Header() {
               <a href="#skills">Skills</a>
             </li>
           )}
+          {viewResume && (
+            <li>
+              <a href="https://drive.google.com/file/d/15RBDFvNkFHQxXsmHyJKMYs_DeDE-fFFi/view?usp=sharing">Resume</a>
+            </li>
+          )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
+         
+          {projectsData && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewAchievement && (
@@ -71,11 +79,7 @@ function Header() {
               <a href="#talks">Talks</a>
             </li>
           )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          )}
+          
           <li>
             <a href="#contact">Contact Me</a>
           </li>

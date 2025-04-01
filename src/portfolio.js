@@ -10,54 +10,54 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1500 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
 
+// const illustration = {
+//   animated: true // Set to false to use static SVG
+// };
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false, // Set this to false to disable the animation
+  imagePath: "./assets/images/myimg.JPG" // Path to your image
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Reshmi Mehta",
+  title: "Hello, I'm Reshmi.",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+    "I’m passionate about cybersecurity and solving complex challenges. From securing cloud environments to identifying AI vulnerabilities, I use data-driven insights to strengthen defenses."
+  ),  
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/15RBDFvNkFHQxXsmHyJKMYs_DeDE-fFFi/view?usp=sharing", // Set to empty to hide the button
+  displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/ReshmiMehta14",
+  linkedin: "https://www.linkedin.com/in/reshmimehta/",
+  gmail: "reshmi140@gmail.com",
+  medium: "https://medium.com/@rbm141101",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
-// Skills Section
+
+  // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "CYBERSECURITY ENTHUSIAST WITH A PASSION FOR DATA-DRIVEN SOLUTIONS",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Perform AI red teaming to identify vulnerabilities and assess model security"),
+    emoji("⚡ Secure cloud environments using AWS, with a focus on compliance and threat detection"),
+    emoji("⚡ Analyze security data to detect anomalies and strengthen system defenses"),
+    emoji("⚡ Implement encryption, secure protocols, and network defenses to mitigate threats"),
+    emoji("⚡ Conduct responsible AI testing to mitigate risks and ensure ethical AI deployment")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -88,14 +88,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+  
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
@@ -104,10 +97,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
+
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -117,7 +107,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -126,23 +116,29 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "University of Washington",
+      logo: require("./assets/images/UW.png"),
+      subHeader: "Master of Science in Information Management",
+      location: "Seattle, Washington, US",
+      duration: "September 2023 - June 2025",
+      desc: "Specialised in Cybersecurity and Data Science",
+      gpa: "GPA: 3.98 / 4.0"
+
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "NMIMS University",
+      logo: require("./assets/images/nmims1.jpg"),
+      subHeader: "Bachelor of Technology in Computer Engineering",
+      location: "Mumbai, Maharashtra, India",
+      duration: "Jul 2019 - May 2023",
+      desc: "Focused on Cybersecurity, Artificial Intelligence and Big Data Analysis ",
+      gpa: "GPA: 3.8 / 4.0"
+
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -150,7 +146,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -174,29 +170,37 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      role: "Security Analyst",
+      company: "Alcon",
+      companylogo: require("./assets/images/Alcon.png"),
       date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Enhanced security monitoring and incident detection by developing 20+ custom KQL rules in Microsoft Sentinel, increasing threat detection accuracy by 40% and reducing false positives by 30% through targeted query optimizations and log analysis.",
+        "Researched and formulated the security framework for AWS Landing Zone Accelerator (LZA) to support HIPAA compliance. Conducted cloud security assessments using AWS Security Hub and GuardDuty, recommending 20+ security controls that reduced compliance gaps.",
+        "Defined and enforced a SIEM policy framework based on NIST 800-53 controls, aiming to improve threat detection consistency across cloud infrastructure. Standardized logging, alerting, and monitoring processes, resulting in a 35% improvement in response time."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Assistant (Gen AI)",
+      company: "University of Washington",
+      companylogo: require("./assets/images/uw.jpeg"),
+      date: "February 2024 – April 2024",
+      descBullets: [
+        "Developed a secure text generation model using Hugging Face Transformers with an interactive Gradio-based UI, implementing API access controls and request rate limiting to prevent unauthorized use, improving model security by 40%.",
+        "Conducted AI Red Teaming and custom adversarial test suites, identifying 5+ exploits (e.g., encoding bypasses, role-playing attacks). Implemented context filtering and regex sanitization, reducing adversarial success rates from 80% to 20%.",
+        "Implemented model output validation using regex filtering and payload inspection to detect potential data leakage, prompt reversals, and unintended system responses, strengthening model security."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Security Analyst Intern",
+      company: "Granuler CIO Consulting",
+      companylogo: require("./assets/images/granu.png"),
+      date: "December 2020 – May 2021",
+      descBullets: [
+        "Developed Power BI dashboards to visualize security-related CRM data, identifying anomalies and inefficiencies in workflows, which improved risk analysis and operational transparency by 25%.",
+        "Utilized SQL to extract and analyze security logs, identifying patterns in unauthorized access attempts and data inconsistencies, optimizing data validation and compliance tracking.",
+        "Automated data pipeline processes using UiPath RPA, streamlining security event logging and report generation, reducing manual effort by 25% and ensuring data accuracy in compliance reports."
+      ]
     }
   ]
 };
@@ -210,19 +214,95 @@ const openSource = {
 };
 
 // Some big projects you have worked on
+const projectsData = {
+  cybersecurityProjects: [
+    {
+      title: "UW HusKey Manager Security",
+      description: "Enhanced the security of UW HusKey Manager to mitigate ARP spoofing attacks and implemented encryption using HTTPS.",
+      link: "https://medium.com/@rbm141101/implementing-https-for-secure-data-transmission-in-huskey-manager-b8e8cfa9ab7e"
+    },
+    {
+      title: "AI Red Teaming",
+      description: "Conducted AI red teaming for vulnerability testing in AI models using adversarial attacks.",
+      link: "https://github.com/ReshmiMehta14"
+    },
+    {
+      title: "Pen testing Owasp JuiceShop",
+      description: "documenting vulnerabilities and ethical hacking techniques applied to the OWASP Juice Shop using BurpSuite",
+      link: "https://github.com/ReshmiMehta14/Owasp-JuiceShop-BurpSuite"
+    },
+    {
+      title: "Adversarial AI prompt detection system",
+      description: "AI-powered system combining regex, NLP, GPT, and ML to detect adversarial prompts (injection, exfiltration, code execution) with real-time analysis and visual insights for cyber defense.",
+      link: "https://github.com/ReshmiMehta14/AI-Powered-Adversarial-Prompt-Detection-for-AI-Cybersecurity"
+    }
+
+  ],
+  dataAIProjects: [
+    {
+      title: "HR Dashboard with Tableau",
+      description: "Built an HR analytics dashboard using Tableau to visualize workforce data and generate actionable insights.",
+      link: "https://public.tableau.com/app/profile/reshmi.mehta/viz/HRDashboard_17339952980100/HRSummary?publish=yes"
+    },
+    {
+      title: "YaarAI Agentic AI chatbot",
+      description: "An empathetic, multi-agent AI chatbot designed to provide human-like, emotionally intelligent conversations by adapting to user emotions, sarcasm detection, and context awareness.",
+      link: "https://github.com/ReshmiMehta14/YaarAI"
+    },
+    {
+      title: "British Airways Sentiment Analysis",
+      description: "sentiment analysis of customer reviews using web scraping and predicting customer buying behavior with machine learning models. It focuses on data cleaning, exploratory analysis, and model development, providing hands-on experience with airline industry data.",
+      link: "https://github.com/ReshmiMehta14/British-Airways-Virtual-Internship-Data-Science-"
+    },
+    {
+      title: "Fake News Detection",
+      description: "addressing the critical issue of fake news detection using advanced data science and machine learning techniques. The solution leverages undersampling methods and fine-tuned LSTM models to achieve high accuracy in identifying fake news.",
+      link: "https://github.com/ReshmiMehta14/Fake-news-detection"
+    },
+    {
+      title: "NY-and-Chicago-Crime-Data-Analysis",
+      description: "nalyzing crime data from two major US cities: Chicago and New York. The aim is to predict crime occurrences and understand the factors influencing arrest rates using various machine learning techniques.",
+      link: "https://github.com/ReshmiMehta14/NY-and-Chicago-Crime-Data-Analysis"
+    }
+  ]
+};
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My projects",
+  subtitle: "Identified vulnerabilities in encoding bypass, jailbreak attempts, and prompt engineering through comprehensive AI red teaming.",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "AI Red teamning on DeepSeek AI, Grok AI and Copilot",
+      projectDesc: "Identified vulnerabilities in encoding bypass, jailbreak attempts, and prompt engineering through comprehensive AI red teaming.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://medium.com/@rbm141101/breaking-ai-guardrails-how-i-tested-deepseek-ais-security-and-what-i-found-f488abcf5f70"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "AI Red teamning on DeepSeek AI, Grok AI and Copilot",
+      projectDesc: "Identified vulnerabilities in encoding bypass, jailbreak attempts, and prompt engineering through comprehensive AI red teaming.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://medium.com/@rbm141101/breaking-ai-guardrails-how-i-tested-deepseek-ais-security-and-what-i-found-f488abcf5f70"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "AI Red teamning on DeepSeek AI, Grok AI and Copilot",
+      projectDesc: "Identified vulnerabilities in encoding bypass, jailbreak attempts, and prompt engineering through comprehensive AI red teaming.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://medium.com/@rbm141101/breaking-ai-guardrails-how-i-tested-deepseek-ais-security-and-what-i-found-f488abcf5f70"
         }
         //  you can add extra buttons here.
       ]
@@ -239,64 +319,84 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications "),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "ISC22 Certified in Cybersecurity",
+      // subtitle:
+      //   "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      image: require("./assets/images/ISC2.png"),
+      imageAlt: "ISC2 Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://www.credly.com/badges/579f459d-f158-4338-957c-3b633ca0b791/public_url"
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      title: "AWS Certified Cloud Practitioner",
+      // subtitle:
+      //   "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/awss.jpg"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+          name: "Certification",
+          url: ""
+        },
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Security +",
+      subtitle: "In Progress",
+      image: require("./assets/images/secplus.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        // {name: "Certification", url: ""},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+    {
+      title: "CTF Amazon x WiCys",
+      subtitle: "Top 10",
+      image: require("./assets/images/amzctf.webp"),
+      //imageAlt: "PWA Logo",
+      footerLink: [
+        {name: "Linkedin post", url: "https://www.linkedin.com/posts/reshmimehta_cybersecurity-ctf-wicys-activity-7264418574088175616-kV4C?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC-f-fwBhEEH-TLYw93dlYmhTvdtFvvz1Oo"}
+        
+      ]
+    },
+    {
+      title: "Github Code review",
+      subtitle: "Finalist-Top 3",
+      image: require("./assets/images/git.jpeg"),
+      //imageAlt: "PWA Logo",
+      footerLink: [
+        {name: "Linkedin post", url: "https://www.linkedin.com/posts/reshmimehta_cybersecurity-securecoding-cyberweek-activity-7302787022178463744-JeWD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC-f-fwBhEEH-TLYw93dlYmhTvdtFvvz1Oo"}
+        
       ]
     }
   ],
@@ -312,16 +412,16 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      url: "https://medium.com/@rbm141101/breaking-ai-guardrails-how-i-tested-deepseek-ais-security-and-what-i-found-f488abcf5f70",
+      title: "Breaking AI Guardrails: How I Tested DeepSeek AI’s Security (And What I Found)",
+      // description:
+      //   "?"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      url: "https://medium.com/@rbm141101/securing-web-applications-a-hands-on-exploration-with-docker-arp-spoofing-and-wireshark-fbd1b77959e6",
+      title: "Securing Web Applications: A Hands-On Exploration with Docker, ARP Spoofing, and Wireshark part 1 of 4",
+      // description:
+      //   "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -343,28 +443,26 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
+  title: emoji("Podcast"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -372,18 +470,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+ // number: "+92-0000000000",
+  email_address: "reshmi14@uw.edu"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -403,5 +501,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
+  projectsData,
   resumeSection
 };

@@ -6,6 +6,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -15,14 +16,12 @@
 
 .greeting-main {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
 }
 
 .greeting-main > * {
@@ -38,6 +37,7 @@
   display: flex;
   margin-top: 40px;
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -53,11 +53,6 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -66,6 +61,7 @@
   transform-origin: 70% 70%;
 }
 
+/* Animation for wave emoji */
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -90,6 +86,21 @@
   }
 }
 
+/* Circular Image - Bigger and Aligned Right */
+.greeting-image-div {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.greeting-image-div img {
+  width: 450px; /* Adjust size as needed */
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -98,7 +109,12 @@
   .greeting-text-p {
     font-size: 20px;
   }
+  .greeting-image-div img {
+    width: 350px;
+    height: 350px;
+  }
 }
+
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
@@ -116,7 +132,13 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .greeting-image-div img {
+    width: 300px;
+    height: 300px;
   }
 }
 
