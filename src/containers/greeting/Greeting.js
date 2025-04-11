@@ -45,7 +45,11 @@ export default function Greeting() {
 
           {/* Right Section with Circular Image */}
           <div className="greeting-image-div">
-            <img src={require("../../assets/images/myimg.JPG")} alt="Profile" />
+            <img
+              src={require("../../assets/images/myimg.JPG")}
+              alt="Profile"
+              className="profile-image"
+            />
           </div>
         </div>
       </div>
