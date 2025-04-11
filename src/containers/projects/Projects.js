@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Project.scss'; // Ensure the file name matches exactly
 import { projectsData } from '../../portfolio';
 
+
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('cybersecurity');
 
@@ -14,9 +15,12 @@ const Projects = () => {
     : projectsData.dataAIProjects;
 
   return (
-    <div className="projects-section" id="projects">
+    <div className="projects-section" id="projectsData">
       <h1 className="projects-title">My Projects</h1>
-      
+      <h2 className="projects-subtitle">
+        Browse projects across <span className="cyber-tag">Cybersecurity</span> and <span className="dataai-tag">Data & AI</span>
+      </h2>
+
       <div className="toggle-buttons">
         <button
           className={selectedCategory === 'cybersecurity' ? 'active' : ''}
@@ -28,7 +32,7 @@ const Projects = () => {
           className={selectedCategory === 'dataAI' ? 'active' : ''}
           onClick={() => handleToggle('dataAI')}
         >
-          Data and AI Projects
+          Data & AI Projects
         </button>
       </div>
 

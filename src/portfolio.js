@@ -173,11 +173,11 @@ const workExperiences = {
       role: "Security Analyst",
       company: "Alcon",
       companylogo: require("./assets/images/Alcon.png"),
-      date: "June 2018 – Present",
+      date: "June 2024 – Present",
       descBullets: [
-        "Enhanced security monitoring and incident detection by developing 20+ custom KQL rules in Microsoft Sentinel, increasing threat detection accuracy by 40% and reducing false positives by 30% through targeted query optimizations and log analysis.",
-        "Researched and formulated the security framework for AWS Landing Zone Accelerator (LZA) to support HIPAA compliance. Conducted cloud security assessments using AWS Security Hub and GuardDuty, recommending 20+ security controls that reduced compliance gaps.",
-        "Defined and enforced a SIEM policy framework based on NIST 800-53 controls, aiming to improve threat detection consistency across cloud infrastructure. Standardized logging, alerting, and monitoring processes, resulting in a 35% improvement in response time."
+        "Conducted gap analysis of AWS cloud infrastructure, identifying compliance and security improvements to streamline AWS Landing Zone Accelerator deployment for HIPAA compliance, ensuring secure and scalable cloud-based analytics.",
+        "Developed a comprehensive guide for ingesting AWS logs into Microsoft Sentinel, improving security monitoring, log management, and anomaly detection—enhancing data-driven decision-making in AI-powered health analytics.",
+        "Designed a standardized naming policy for SIEM policy aligned with the NIST framework, improving data organization, security compliance, and analytics consistency across the cloud environment."
       ]
     },
     {
@@ -215,35 +215,32 @@ const openSource = {
 
 // Some big projects you have worked on
 const projectsData = {
+  display: true,
   cybersecurityProjects: [
     {
       title: "UW HusKey Manager Security",
       description: "Enhanced the security of UW HusKey Manager to mitigate ARP spoofing attacks and implemented encryption using HTTPS.",
-      link: "https://medium.com/@rbm141101/implementing-https-for-secure-data-transmission-in-huskey-manager-b8e8cfa9ab7e"
-    },
-    {
-      title: "AI Red Teaming",
-      description: "Conducted AI red teaming for vulnerability testing in AI models using adversarial attacks.",
-      link: "https://github.com/ReshmiMehta14"
-    },
-    {
-      title: "Pen testing Owasp JuiceShop",
-      description: "documenting vulnerabilities and ethical hacking techniques applied to the OWASP Juice Shop using BurpSuite",
-      link: "https://github.com/ReshmiMehta14/Owasp-JuiceShop-BurpSuite"
+      link: "https://github.com/ReshmiMehta14/SecurePasswordManager/blob/main/README.md"
     },
     {
       title: "Adversarial AI prompt detection system",
       description: "AI-powered system combining regex, NLP, GPT, and ML to detect adversarial prompts (injection, exfiltration, code execution) with real-time analysis and visual insights for cyber defense.",
       link: "https://github.com/ReshmiMehta14/AI-Powered-Adversarial-Prompt-Detection-for-AI-Cybersecurity"
+    },
+    {
+      title: "AI Red Teaming on DeepSeek AI, Grok AI and CoPilot",
+      description: "Conducted AI red teaming for vulnerability testing in AI models using adversarial attacks.",
+      link: "https://github.com/ReshmiMehta14/Adversarial-AI-Red-teaming"
+    },
+    {
+      title: "Pen testing Owasp JuiceShop",
+      description: "Documenting vulnerabilities and ethical hacking techniques applied to the OWASP Juice Shop using BurpSuite",
+      link: "https://github.com/ReshmiMehta14/Owasp-JuiceShop-BurpSuite"
     }
 
   ],
   dataAIProjects: [
-    {
-      title: "HR Dashboard with Tableau",
-      description: "Built an HR analytics dashboard using Tableau to visualize workforce data and generate actionable insights.",
-      link: "https://public.tableau.com/app/profile/reshmi.mehta/viz/HRDashboard_17339952980100/HRSummary?publish=yes"
-    },
+
     {
       title: "YaarAI Agentic AI chatbot",
       description: "An empathetic, multi-agent AI chatbot designed to provide human-like, emotionally intelligent conversations by adapting to user emotions, sarcasm detection, and context awareness.",
@@ -251,19 +248,29 @@ const projectsData = {
     },
     {
       title: "British Airways Sentiment Analysis",
-      description: "sentiment analysis of customer reviews using web scraping and predicting customer buying behavior with machine learning models. It focuses on data cleaning, exploratory analysis, and model development, providing hands-on experience with airline industry data.",
+      description: "Sentiment analysis of customer reviews using web scraping and predicting customer buying behavior with machine learning models. It focuses on data cleaning, exploratory analysis, and model development, providing hands-on experience with airline industry data.",
       link: "https://github.com/ReshmiMehta14/British-Airways-Virtual-Internship-Data-Science-"
     },
     {
       title: "Fake News Detection",
-      description: "addressing the critical issue of fake news detection using advanced data science and machine learning techniques. The solution leverages undersampling methods and fine-tuned LSTM models to achieve high accuracy in identifying fake news.",
+      description: "Addressing the critical issue of fake news detection using advanced data science and machine learning techniques. The solution leverages undersampling methods and fine-tuned LSTM models to achieve high accuracy in identifying fake news.",
       link: "https://github.com/ReshmiMehta14/Fake-news-detection"
     },
     {
       title: "NY-and-Chicago-Crime-Data-Analysis",
-      description: "nalyzing crime data from two major US cities: Chicago and New York. The aim is to predict crime occurrences and understand the factors influencing arrest rates using various machine learning techniques.",
+      description: "Analyzing crime data from two major US cities: Chicago and New York. The aim is to predict crime occurrences and understand the factors influencing arrest rates using various machine learning techniques.",
       link: "https://github.com/ReshmiMehta14/NY-and-Chicago-Crime-Data-Analysis"
-    }
+    },
+    {
+      title: "Sales Data Warehousing",
+      description: "By leveraging Snowflake for ELT processes, SQL for data modeling, and Tableau for visualization, the project delivered scalable, insightful, and actionable intelligence.",
+      link: "https://medium.com/@rbm141101/building-a-scalable-retail-data-warehouse-elt-processes-dimensional-modeling-sql-and-tableau-1aea2c6ed16f"
+    },
+    {
+      title: "HR Dashboard with Tableau",
+      description: "Built an HR analytics dashboard using Tableau to visualize workforce data and generate actionable insights.",
+      link: "https://public.tableau.com/app/profile/reshmi.mehta/viz/HRDashboard_17339952980100/HRSummary?publish=yes"
+    },
   ]
 };
 
@@ -332,7 +339,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "ISC22 Certified in Cybersecurity",
+      title: "ISC2 Certified in Cybersecurity",
       // subtitle:
       //   "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/ISC2.png"),
@@ -361,7 +368,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: ""
+          url: "https://www.credly.com/badges/8e72645d-cf6a-41d4-a8da-ffaf8ea6a336/linked_in_profile"
         },
       ]
     },
